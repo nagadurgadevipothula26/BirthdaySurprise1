@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Surprise ❤️</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Welcome Page -->
+    <div class="welcome" id="welcomePage">
+      <h1>Hey My Love! ❤️</h1>
+
+      <h2>I Have a Special Surprise for You 🎁</h2>
+
+      <p>My very special Person was born on 16 November 1994!</p>
+
+      <button onclick="startSurprise()">Open Your Surprise 💕</button>
+    </div>
+
+    <!-- Memories Page -->
+    <div class="memories" id="memoriesPage">
+      <h1>Our Beautiful Memories 💑</h1>
+
+      <p>Every moment with you is my favorite memory ❤️</p>
+
+      <div class="photo-gallery">
+        <img src="images/pics/photo1.jpeg" alt="Our Memory 1" />
+        <img src="images/pics/photo2.jpeg" alt="Our Memory 2" />
+        <img src="images/pics/photo3.jpeg" alt="Our Memory 3" />
+        <img src="images/pics/photo4.jpeg" alt="Our Memory 4" />
+        <img src="images/pics/photo5.jpeg" alt="Our Memory 5" />
+        <img src="images/pics/photo6.jpeg" alt="Our Memory 6" />
+        <img src="images/pics/photo7.jpeg" alt="Our Memory 7" />
+        <img src="images/pics/photo8.jpeg" alt="Our Memory 8" />
+      </div>
+
+      <h2>You Are My Forever Person 💖</h2>
+
+      <button onclick="nextPage()">Next Surprise ❤️</button>
+    </div>
+    <!-- Love Quiz Page -->
+    <div class="quiz" id="quizPage">
+      <h1>How Well Do You Remember Us? ❤️</h1>
+
+      <p>Let's test your memory, my love! 💕</p>
+
+      <h2>Question 1 💑</h2>
+      <p>Mana first meet eppudu?</p>
+
+      <input type="date" id="meetingDate" />
+
+      <h2>Question 2 💍</h2>
+      <p>Mana pelli❤️ roju eppudu?</p>
+
+      <input type="date" id="marriageDate" />
+
+      <br /><br />
+
+      <button onclick="checkAnswers()">Unlock My Surprise 🎁</button>
+
+      <p id="result"></p>
+      <button onclick="testBirthdayPage()">Birthday Page 🎂</button>
+    </div>
+
+    <!-- Final Birthday Surprise Page -->
+    <div class="birthday" id="birthdayPage">
+      <div class="floating-hearts" id="hearts"></div>
+
+      <h1>🎉 Happy 32nd Birthday! 🎉</h1>
+
+      <h2>To The Man Who Rules My Heart ❤️</h2>
+
+      <p class="birth-date">Born on 16 November 1994 🎂</p>
+
+      <div class="cake">🎂</div>
+
+      <div class="love-message">
+        <p>My Love ❤️</p>
+
+        <p>
+          You are not just my husband, you are my happiness, my strength, my
+          safe place, and my forever person, some times we fight each other but
+          my first priority and my everything is you my lovely Srivaru❤️, I am
+          the part of you, without you I am nothing my dear and I Love you
+          forever, youre mine forver❤️.
+        </p>
+
+        <p>
+          Every moment spent with you is a beautiful memory that I will cherish
+          forever.
+        </p>
+
+        <p>No matter how far we are, my heart will always belong to you.</p>
+
+        <h2>I Love You Forever and Always! 💋❤️</h2>
+      </div>
+
+      <button onclick="celebrate()">Celebrate With Me 🎉</button>
+
+      <div id="confetti-container"></div>
+      <!-- Secret Love Letter -->
+      <div class="secret-letter-section">
+        <button onclick="openLoveLetter()">
+          One Last Surprise, My Love 💌
+        </button>
+
+        <div class="letter-box" id="letterBox">
+          <h2>💌 A Letter From My Heart 💌</h2>
+
+          <p id="typedLetter"></p>
+
+          <p class="letter-signature">Forever Yours, Your Wife ❤️</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop preload="auto">
+      <source src="./music/love-song.mp3" type="audio/mpeg" />
+      Your browser does not support audio.
+    </audio>
+
+    <!-- Music Button -->
+    <button id="musicButton" class="music-control" onclick="toggleMusic()">
+      ▶️ Play Music
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
